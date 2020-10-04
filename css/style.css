@@ -9,7 +9,7 @@
  }
 
 body{
-   --theme-color: #328dbb;
+   --theme-color: #449ac7;
 }
 
 .btn{
@@ -29,6 +29,8 @@ body{
 a{
    text-decoration: none;
    color: white;
+   transition-duration: 0.3s;
+   transition-property: opacity;
 }
 
 ul{
@@ -56,7 +58,7 @@ body, h1, h2, h3, h4{         /* Website Font Theme */
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgba(0,0,0,0.3);
+   background: rgba(0,0,0,0.4);
 }
 
 /* Nav */
@@ -72,6 +74,7 @@ header {
    background: black;
    z-index: 2;
    transition: 0.5s;
+   opacity: 0.95;
 }
 
 header ul{
@@ -83,8 +86,11 @@ header li{
    font-weight: 300;
 }
 
-header a{
+nav a{
    padding: 15px 20px;
+   transition-duration: 0.2s;
+   transition-property: border;
+   border-bottom: 2px solid transparent;
 }
 
 nav a:hover{
@@ -123,6 +129,7 @@ nav a:hover{
 #showcase-text p{
    font-size: 1.2rem;
    font-weight: 300;
+   opacity: 1;
 }
 
 #showcase-text a{
@@ -205,6 +212,8 @@ nav a:hover{
 #about img{
    width: 50vw;
    height: 430px;
+   object-fit: cover;
+   object-position: bottom;
 }
 
 .about-content{
@@ -295,6 +304,8 @@ nav a:hover{
 #contact img{
    width: 50vw;
    height: 430px;
+   object-fit: cover;
+   object-position: top;
 }
 
 .contact-image::before{
@@ -365,10 +376,12 @@ nav a:hover{
    color: white;
    border: none;
    border-radius: 3px;
+   transition-duration: 0.2s;
+   transition-property: opacity;
 }
 
 #submit:hover {
-   opacity: 0.9;
+   opacity: 0.85;
 }
 
 /* Footer */
