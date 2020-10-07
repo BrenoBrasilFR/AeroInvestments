@@ -511,6 +511,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 116px;
+    margin-right: 0px;
   }
 
   nav > a {
