@@ -106,6 +106,14 @@ header li {
   border-bottom: 2px solid var(--theme-color);
 }
 
+nav {
+  margin-right: 50px;
+}
+
+#brand {
+  margin-left: 50px;
+}
+
 #brand h2 {
   font-weight: 200;
   font-size: 33px;
