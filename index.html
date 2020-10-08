@@ -22,7 +22,7 @@
                   <h2><span>Aero</span> Investments</h2>
                </a>
             </div>
-            <nav>
+            <nav id="nav">
                <a class="menu-outer" href="#">
                   <div id="menu">
                      <div class="line line-1"></div>
@@ -170,14 +170,39 @@
    <!-- JavaScript -->
    <script>
       const navbar = document.getElementById('header');
+      const adjustBrand = document.getElementById('brand');
+      const adjustNav = document.getElementById('nav');
+      const x = window.matchMedia("(max-width: 700px)");
 
       window.onscroll = function () {
          if (window.pageYOffset > 50) {
             navbar.classList.remove('top');
-         } else {
+            adjustBrand.style.marginLeft = "70px";
+            adjustNav.style.marginRight = "70px";
+         } else if (window.pageYOffset < 50){
             navbar.classList.add('top');
+            adjustBrand.style.marginLeft = "0px";
+            adjustNav.style.marginRight = "0px";
+         } if (x.matches) {
+            adjustBrand.style.marginLeft = "0px";
+            adjustNav.style.marginRight = "0px";
          }
       }
+
+      // window.onscroll = function2 (x) {
+      //    if (window.pageYOffset > 50 && x.matches) {
+      //       navbar.classList.remove('top');
+      //    } else {
+      //       navbar.classList.add('top');
+      //    }
+      // }
+      
+      // x.addListener(function2)
+
+      // else if (x.matches && window.pageYOffset > 50){
+      //       navbar.classList.remove('top');
+      //    } else if (x.matches && window.pageYOffset < 50){
+      //       navbar.classList.add('top');
 
       // Smooth Scrolling
       $('#header a, .btn').on('click', function (e) {

@@ -1,16 +1,12 @@
-html {
-  width: 100vw;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   --theme-color: #449ac7;
@@ -107,11 +103,11 @@ header li {
 }
 
 nav {
-  margin-right: 50px;
+  transition-duration: 0.5s;
 }
 
 #brand {
-  margin-left: 50px;
+  transition-duration: 0.5s;
 }
 
 #brand h2 {
