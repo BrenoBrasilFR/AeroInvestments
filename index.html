@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/utilities.css">
 </head>
-<body">
+<body" onload="menuFunction">
    <section id="home">
       <div id="showcase">
          <header id="header" class="top">
@@ -104,6 +104,8 @@
             </div>
          </div>
 
+         <div class="line-services"></div>
+
          <div class="services-sections">
             <i class="fas fa-book-reader fa-2x"></i>
             <div>
@@ -116,6 +118,8 @@
             </div>
          </div>
 
+         <div class="line-services"></div>
+
          <div class="services-sections">
             <i class="fas fa-pencil-alt fa-2x"></i>
             <div>
@@ -127,6 +131,7 @@
                <a href="#" class="btn">Know More</a>
             </div>
          </div>
+
       </div>
    </section>
 
@@ -186,23 +191,11 @@
          } if (x.matches) {
             adjustBrand.style.marginLeft = "0px";
             adjustNav.style.marginRight = "0px";
+         } if (y.matches) {
+            adjustBrand.style.marginLeft = "0px";
+            adjustNav.style.marginRight = "0px";
          }
       }
-
-      // window.onscroll = function2 (x) {
-      //    if (window.pageYOffset > 50 && x.matches) {
-      //       navbar.classList.remove('top');
-      //    } else {
-      //       navbar.classList.add('top');
-      //    }
-      // }
-      
-      // x.addListener(function2)
-
-      // else if (x.matches && window.pageYOffset > 50){
-      //       navbar.classList.remove('top');
-      //    } else if (x.matches && window.pageYOffset < 50){
-      //       navbar.classList.add('top');
 
       // Smooth Scrolling
       $('#header a, .btn').on('click', function (e) {

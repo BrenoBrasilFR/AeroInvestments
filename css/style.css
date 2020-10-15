@@ -435,10 +435,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* Media Queries */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   header {
     display: flex;
     flex-direction: column;
@@ -470,6 +471,14 @@ footer {
   #contact img {
     object-fit: cover;
   }
+
+  .line-services {
+    display: none;
+  }
+
+  .services-sections {
+    width: 33%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -489,7 +498,7 @@ footer {
 
   #brand h2 {
     padding: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .menu {
@@ -506,7 +515,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 116px;
+    width: 120px;
     margin-right: 0px;
   }
 
@@ -533,7 +542,7 @@ footer {
 
   .menu > ul > li > a {
     padding: 3px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   /* Showcase */
@@ -557,6 +566,14 @@ footer {
 
   .team-box {
     width: 100%;
+  }
+
+  .team-box > img {
+    margin-top: 10px;
+  }
+
+  .team-box > h3 {
+    margin-top: 13px;
   }
 
   #team-text h3 {
@@ -596,24 +613,40 @@ footer {
   }
 
   /* Services */
+  #services {
+    margin: 0;
+  }
+
+  #services > h2 {
+    margin: 30px 0 30px;
+  }
+
   .services-div {
     flex-direction: column;
   }
 
-  .services-sections {
-    margin-top: 40px;
+  .line-services {
+    display: block;
+    width: 70%;
+    background: #555;
+    height: 1px;
   }
 
-  .services-sections:first-child {
-    margin-top: 10px;
+  .line-services:last-child {
+    margin-bottom: 20px;
+  }
+
+  .services-sections {
+    width: 90%;
+  }
+
+  .services-sections > div {
+    margin-bottom: 60px;
+    width: 100%;
   }
 
   .services-div i {
-    margin-top: 30px;
-  }
-
-  #services h2 {
-    margin-bottom: 0;
+    margin-top: 50px;
   }
 
   /* Contact */
