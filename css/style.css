@@ -78,8 +78,15 @@ header {
     position: fixed;
     background: black;
     z-index: 2;
-    transition: 0.5s;
+    transition-duration: 0.5s;
     opacity: 0.95;
+    box-shadow: 0px 0px 20px black;
+    border-bottom: 1px solid transparent;
+}
+
+#header.top {
+    background: transparent;
+    box-shadow: none;
 }
 
 header ul {
@@ -94,13 +101,13 @@ header li {
 .menu ul > li > a {
     padding: 10px 15px;
     margin: 0 5px;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     transition-property: border;
     border-bottom: 2px solid transparent;
 }
 
 .menu > ul > li > a:hover {
-    border-bottom: 2px solid #58b9eb;
+    border-bottom: 2px solid #eee;
 }
 
 nav {
@@ -117,8 +124,15 @@ nav {
     cursor: pointer;
 }
 
-#header.top {
-    background: transparent;
+#brand a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand img {
+    height: 45px;
+    margin-right: 10px;
 }
 
 .menu-outer {
@@ -341,7 +355,7 @@ nav {
 }
 
 #services h2 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: black;
     font-size: 3.4rem;
 }
@@ -464,12 +478,16 @@ footer {
         margin-top: 20px;
     }
 
-    #brand h2 {
+    #brand {
         padding-bottom: 20px;
     }
 
     #brand a {
         padding: 0px;
+    }
+
+    #brand img {
+        display: none;
     }
 
     #about img {
@@ -524,10 +542,10 @@ footer {
 
     #brand {
         margin-left: 0px;
+        padding: 0;
     }
 
     #brand h2 {
-        padding: 10px 0;
         font-size: 1.6rem;
     }
 
