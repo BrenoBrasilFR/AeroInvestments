@@ -183,6 +183,10 @@ nav {
 }
 
 /* Team */
+#team {
+    padding: 45px 10px 65px;
+}
+
 #team-text {
     display: flex;
     justify-content: center;
@@ -192,7 +196,6 @@ nav {
 
 #team-text h3 {
     font-size: 3rem;
-    margin-top: 40px;
 }
 
 #team-text h2 {
@@ -247,7 +250,6 @@ nav {
 
 .team-box p {
     font-size: 1.3rem;
-    margin-bottom: 60px;
     font-weight: 400;
 }
 
@@ -305,7 +307,7 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 40px 0 70px;
+    padding: 45px 0 80px;
 }
 
 .services-div {
@@ -397,7 +399,7 @@ nav {
     display: block;
     color: white;
     font-size: 1.24rem;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 #name-label {
@@ -407,7 +409,7 @@ nav {
 .contact-form input {
     width: 100%;
     padding: 4px;
-    height: 35px;
+    height: 30px;
     border: #f5f5f5 1px solid;
     font-size: 0.95rem;
 }
@@ -579,6 +581,10 @@ footer {
     }
 
     /* Team */
+    #team {
+        padding-bottom: 50px;
+    }
+
     #team h2 {
         text-align: center;
     }
@@ -604,15 +610,19 @@ footer {
         margin-top: 13px;
     }
 
+    #box-3 p {
+        margin-bottom: 0;
+    }
+
     #team-text h3 {
         font-size: 2.5rem;
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     #team-text h2 {
         font-size: 1.8rem;
-        padding: 10px 10px 5px;
-        margin: 3px 0 7px;
+        padding: 13px 10px 13px;
+        margin: 0;
     }
 
     /* About */
@@ -643,10 +653,11 @@ footer {
     /* Services */
     #services {
         margin: 0;
+        padding: 60px 0 90px;
     }
 
     #services > h2 {
-        margin: 30px 0 0px;
+        margin: 0 0 40px;
     }
 
     .services-div {
@@ -665,12 +676,15 @@ footer {
     }
 
     .services-sections > div {
-        margin-bottom: 60px;
         width: 100%;
     }
 
-    .services-div i {
-        margin-top: 50px;
+    .services-sections > i {
+        margin: 0;
+    }
+
+    .line-services {
+        margin: 70px 0 50px;
     }
 
     /* Contact */
