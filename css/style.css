@@ -362,8 +362,6 @@ nav {
 /* Contact */
 #contact {
     display: flex;
-    z-index: -1;
-    position: relative;
 }
 
 #contact-img {
@@ -393,6 +391,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     padding: 30px;
+    position: relative;
 }
 
 .contact-content h2 {
@@ -460,6 +459,7 @@ footer {
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 0px, 0px 0px 20px black;
+    position: relative;
 }
 
 /* Media Queries */
