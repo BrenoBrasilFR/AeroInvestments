@@ -355,7 +355,7 @@ nav {
 }
 
 #services h2 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     color: black;
     font-size: 3.4rem;
 }
@@ -467,7 +467,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 130px;
+        height: 125px;
     }
 
     #showcase-text {
@@ -546,7 +546,13 @@ footer {
     }
 
     #brand h2 {
-        font-size: 1.6rem;
+        display: none;
+        font-size: 1.8rem;
+    }
+    
+    #brand img {
+        display: inline;
+        height: 55px;
     }
 
     .menu {
