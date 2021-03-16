@@ -549,11 +549,6 @@ footer {
         font-size: 1.8rem;
     }
 
-    #brand img {
-        display: inline;
-        height: 55px;
-    }
-
     .menu {
         display: none;
     }
