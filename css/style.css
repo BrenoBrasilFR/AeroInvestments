@@ -712,14 +712,6 @@ footer {
     }
 
     /* Contact */
-    #contact {
-        flex-direction: column-reverse;
-    }
-
-    #contact img {
-        display: none;
-    }
-
     .inner-contact-content {
         width: 100%;
         height: 100%;
@@ -738,5 +730,9 @@ footer {
 
     .input-form label {
         text-align: left;
+    }
+
+    #contact-img {
+        display: none;
     }
 }
