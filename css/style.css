@@ -54,6 +54,7 @@ h4 {
     background: url(../images/skyline2.jpg) no-repeat center center/cover;
     height: 100vh;
     position: relative;
+    background-attachment: fixed;
 }
 
 #showcase::before {
